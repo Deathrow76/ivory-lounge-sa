@@ -1,29 +1,56 @@
-@import url(https://fonts.googleapis.com/css?family=Mako);
+@import url(../fonts/MagistralC-Bold 2.otf);
 
-body {
-  font-family: 'Mako', sans-serif     !important;
+@font-face {
+    font-family: 'magistralcbold';
+    src: url('../fonts/magistralc-bold_2-webfont.woff2') format('woff2'),
+         url('../fonts/magistralc-bold_2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
-
 
 .event-image {
     height: 100%;
     background-color: #000000;
-    margin-left: -15px;
-    margin-right: -15px;
     text-align: -webkit-center;
 }
 
 
 .overview-container {
-    background-image: url(../img/norwegian_rose.png);
-    background-repeat:repeat;
+    background-image: url(../img/overview-bg.png);
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: #464646;
     padding: 20px;
     height:100%;  
     width: 100%;
+    display: table;
 }
 
 .overview-container a {
-    color: red;
+    color: #3f87c8;
+}
+
+.article-container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.article-container img {
+    vertical-align: middle;
+}
+
+.article-container h2 {
+    font-size: 32px     !important;
+    text-shadow: 1px 1px 1px #000, 
+                  3px 3px 5px #000;   
+}
+
+.article-container h4 {
+    text-shadow: 1px 1px 1px #000, 
+                  3px 3px 5px #000;   
 }
 
 
@@ -35,9 +62,7 @@ body {
 .usa-today {
     margin-top: 20px;
     margin-bottom: 20px;
-
 }
-
 
 .gallery-container {
     background-image: url(../img/escheresque_ste.png);
@@ -49,7 +74,11 @@ body {
 }
 
 .gallery-container h2{
+    font-family: 'magistralcbold';
+    font-size: 32px     !important;
     color: #ffffff;
+    text-shadow: 1px 1px 1px #000, 
+                  3px 3px 5px #000;    
 }
 
 .gallery-container hr{
@@ -66,12 +95,16 @@ body {
 }
 
 .directions-container h2{
+    font-family: 'magistralcbold';
+    font-size: 32px     !important;
     color: #ffffff;
+    text-shadow: 1px 1px 1px #000, 
+                  3px 3px 5px #000;    
 }
 
 .directions-container p{
     color: #ffffff;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
 }
 
 .directions-container hr{
@@ -80,8 +113,24 @@ body {
 }
 
 .directions-container h4{
+    font-family: 'magistralcbold';
     color: #ffffff;
 }
+
+
+.directions-pic-container {
+    margin-bottom: 10px;
+    margin-top: 30px;
+
+}
+
+.directions-pic-container iframe {
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 0 40px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow:    0 2px 4px rgba(0, 0, 0, 0.6), 0 0 40px rgba(0, 0, 0, 0.1);
+    box-shadow:         0 2px 4px rgba(0, 0, 0, 0.6), 0 0 40px rgba(0, 0, 0, 0.1); 
+
+}
+
 
 .bottle-service-container{
     background-image: url(../img/arab_tile.png);
@@ -91,7 +140,11 @@ body {
 }
 
 .bottle-service-container h2{
+    font-family: 'magistralcbold';
+    font-size: 32px     !important;
     color: #ffffff;
+    text-shadow: 1px 1px 1px #000, 
+                  3px 3px 5px #000;
 }
 
 .bottle-service-container hr{
@@ -137,19 +190,16 @@ body {
 }
 
 .rental-container h2{
+    font-family: 'magistralcbold';
+    font-size: 32px     !important;
     color: #ffffff;
+    text-shadow: 1px 1px 1px #000, 
+                  3px 3px 5px #000;    
 }
 
 .rental-container hr{
     margin-bottom: 10px;
     margin-top: 10px;
-}
-
-
-.directions-pic-container {
-    margin-bottom: 10px;
-    margin-top: 30px;
-
 }
 
 .scrollToTop{
@@ -192,6 +242,10 @@ body {
 .fa.fa-twitter, .fa-facebook{
 	border-radius: 50%;
 	background:#b4b4b4;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 0 40px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow:    0 2px 4px rgba(0, 0, 0, 0.6), 0 0 40px rgba(0, 0, 0, 0.1);
+    box-shadow:         0 2px 4px rgba(0, 0, 0, 0.6), 0 0 40px rgba(0, 0, 0, 0.1); 
+    
 }
 
 .fa-twitter:hover{
@@ -209,4 +263,18 @@ body {
      border-top-width: 4px;
      border-top-style: solid;
      margin-top: -20px;
+     padding-top: 20px !important;
+     padding-bottom: 20px !important;
+}
+
+.footer a, .footer a:visited{
+    color:lightskyblue;
+}
+
+.footer a:hover, .footer a:visited:hover{
+    color:lightskyblue;
+}
+
+.content a:not(.button):visited {
+    color: lightskyblue !important;
 }
